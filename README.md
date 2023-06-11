@@ -1,4 +1,4 @@
-# email-validator
+# Email Validation Check
 
 <div align="center">
   
@@ -9,7 +9,14 @@
 </div>
 
 ## Show some :heart: and :star: the repo if you like the design.
-![email_Validator]()
+
+**Live Demo** - https://yashk9293.github.io/email-validator/
+
+### invalid mail
+![email_invalid](https://github.com/yashk9293/email-validator/blob/main/images/invalid_mail.png)
+
+### valid mail
+![email_valid](https://github.com/yashk9293/email-validator/blob/main/images/valid_mail.png)
 
 ## Author
 
