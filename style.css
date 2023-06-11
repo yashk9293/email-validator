@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* border: 2px solid red; */
+    /* background-color: black; */
+}
+
+body{
+    background: rgb(65, 63, 63);
+}
+
+.main{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#mail{
+    width: 75%;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+h3{
+    color: white;
+    letter-spacing: 1px;
+    padding: 0px 0px 15px;
+    margin-bottom: 80px;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.input{
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    margin-bottom: 25px;
+
+}
+
+#email-field{
+    display: block;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #555;
+    background: rgb(48, 46, 46);
+    color: white;
+    outline: none;
+    font-size: 26px;
+    padding: 5px 2px;
+    position: relative;
+    z-index: 10;
+}
+
+#email-label{
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 2px;
+    color: #b3adad;
+    font-size: 18px;
+    transition: bottom 0.3s;
+    z-index: 15;
+}
+
+#email-error{
+    position: absolute;
+    top: 100%;
+    left: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    color: red;
+    transition: top 0.5s;
+}
+
+#mail.invalid .input:before {
+    content: '';
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    width: 24px;
+    height: 24px;
+    background: url(/images/invalid.png);
+    background-size: cover;
+    z-index: 500;
+}
+
+#mail.valid .input:before {
+    content: '';
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    width: 24px;
+    height: 24px;
+    background: url(/images/valid.png);
+    background-size: cover;
+    z-index: 500;
+}
